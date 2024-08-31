@@ -29,42 +29,41 @@ class AppTheme {
       const ColorScheme.light().copyWith(
     primary: AppColors.primary,
     onPrimary: AppColors.white,
-    onBackground: AppColors.darkGrey,
     onSurface: AppColors.darkPurple,
   );
 
   static TextTheme _textTheme(ColorScheme colorScheme) => TextTheme(
-        headline4: GoogleFonts.notoSans(
+        headlineLarge: GoogleFonts.notoSans(
           fontSize: 48,
           fontWeight: FontWeight.bold,
           color: colorScheme.onPrimary,
         ),
-        headline5: GoogleFonts.notoSans(
+        headlineMedium: GoogleFonts.notoSans(
           fontSize: 24,
           fontWeight: FontWeight.w700,
           color: colorScheme.onSurface,
         ),
-        headline6: GoogleFonts.notoSans(
+        headlineSmall: GoogleFonts.notoSans(
           fontSize: 16,
           fontWeight: FontWeight.w400,
           color: colorScheme.onSurface,
         ),
-        bodyText1: GoogleFonts.notoSans(
+        bodyLarge: GoogleFonts.notoSans(
           fontSize: 14,
           fontWeight: FontWeight.w400,
           color: AppColors.dark,
         ),
-        bodyText2: GoogleFonts.notoSans(
+        bodyMedium: GoogleFonts.notoSans(
           fontSize: 14,
           fontWeight: FontWeight.w600,
           color: AppColors.dark,
         ),
-        subtitle2: GoogleFonts.notoSans(
+        titleMedium: GoogleFonts.notoSans(
           fontSize: 12,
           fontWeight: FontWeight.w400,
           color: AppColors.darkGrey,
         ),
-        button: GoogleFonts.notoSans(
+        labelLarge: GoogleFonts.notoSans(
           fontSize: 14,
           fontWeight: FontWeight.bold,
           color: colorScheme.onPrimary,

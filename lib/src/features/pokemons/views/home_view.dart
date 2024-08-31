@@ -38,7 +38,7 @@ class HomeView extends ConsumerWidget {
                   const Spacing.tinyWidth(),
                   Text(
                     AppStrings.pokedex,
-                    style: textTheme.headline5,
+                    style: textTheme.headlineMedium,
                   ),
                 ]),
                 bottom: TabBar(indicator: const CustomTabIndicator(), tabs: [

@@ -25,6 +25,7 @@ class _AllPokemonViewState extends State<AllPokemonView>
     with AutomaticKeepAliveClientMixin {
   @override
   Widget build(BuildContext context) {
+    super.build(context);
     return Padding(
         padding: const EdgeInsets.fromLTRB(
           Dimensions.small,
@@ -115,7 +116,7 @@ class PokemonLoadingGridView extends StatelessWidget {
     } else if (ResponsiveScreen.isLaptop(context)) {
       return 5;
     } else {
-      return 5;
+      return 6;
     }
   }
 
@@ -159,7 +160,7 @@ class PokemonErrorView extends ConsumerWidget {
         children: [
           Text(
             'Try Again',
-            style: Theme.of(context).textTheme.bodyText1,
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           const Spacing.bigHeight(),
           ElevatedButton(

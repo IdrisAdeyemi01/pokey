@@ -38,7 +38,7 @@ class PokemonDetailsView extends ConsumerWidget {
                           backgroundColor: AppColors.lightPurple),
                       child: Text(
                         AppStrings.removeFromFavourites,
-                        style: textTheme.bodyText2!
+                        style: textTheme.bodyMedium!
                             .copyWith(color: AppColors.primary),
                       ),
                       onPressed: () =>
@@ -93,17 +93,17 @@ class PokemonDetailsView extends ConsumerWidget {
                                 Text(
                                   pokemon.name[0].toUpperCase() +
                                       pokemon.name.substring(1),
-                                  style: textTheme.headline5!
+                                  style: textTheme.headlineSmall!
                                       .copyWith(fontSize: 32),
                                 ),
                                 Text(
                                   pokemon.types.join(', '),
-                                  style: textTheme.headline6,
+                                  style: textTheme.labelSmall,
                                 ),
                                 const Spacer(),
                                 Text(
                                   '#${pokemon.id.toString().padLeft(3, '0')}',
-                                  style: textTheme.headline6,
+                                  style: textTheme.labelSmall,
                                 ),
                               ],
                             ),
@@ -142,12 +142,12 @@ class PokemonDetailsView extends ConsumerWidget {
                                     children: [
                                       Text(
                                         AppStrings.height,
-                                        style: textTheme.subtitle2,
+                                        style: textTheme.labelSmall,
                                       ),
                                       const Spacing.tinyHeight(),
                                       Text(
                                         '${pokemon.height}',
-                                        style: textTheme.bodyText1,
+                                        style: textTheme.bodyMedium,
                                       ),
                                     ],
                                   ),
@@ -160,11 +160,11 @@ class PokemonDetailsView extends ConsumerWidget {
                                     children: [
                                       Text(
                                         AppStrings.weight,
-                                        style: textTheme.subtitle2,
+                                        style: textTheme.titleMedium,
                                       ),
                                       const Spacing.tinyHeight(),
                                       Text('${pokemon.weight}',
-                                          style: textTheme.bodyText1),
+                                          style: textTheme.bodyLarge),
                                     ],
                                   ),
                                   const Spacer(
@@ -176,11 +176,11 @@ class PokemonDetailsView extends ConsumerWidget {
                                     children: [
                                       Text(
                                         AppStrings.bmi,
-                                        style: textTheme.subtitle2,
+                                        style: textTheme.titleMedium,
                                       ),
                                       const Spacing.tinyHeight(),
                                       Text(pokemon.bmi,
-                                          style: textTheme.bodyText1),
+                                          style: textTheme.bodyLarge),
                                     ],
                                   ),
                                   const Spacer(
@@ -316,7 +316,7 @@ class _StatsColumn extends StatelessWidget {
           children: [
             Text(
               title,
-              style: textTheme.bodyText1,
+              style: textTheme.bodyLarge,
             ),
             const Spacing.smallWidth(),
             Text('$value'),

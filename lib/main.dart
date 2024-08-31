@@ -26,7 +26,7 @@ class MyApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Bayzat Mobile Assignment',
+      title: 'Pokey',
       theme: AppTheme.lightTheme,
       home: const StartupView(),
       onGenerateRoute: Routes.generateRoute,

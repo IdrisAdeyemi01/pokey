@@ -9,9 +9,9 @@ class GeneralUtility {
     } else if (ResponsiveScreen.isMobile(context)) {
       return 3;
     } else if (ResponsiveScreen.isLaptop(context)) {
-      return 4;
-    } else {
       return 5;
+    } else {
+      return 6;
     }
   }
 }

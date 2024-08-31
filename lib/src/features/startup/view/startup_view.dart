@@ -73,12 +73,14 @@ class _StartupViewState extends ConsumerState<StartupView> {
                       children: [
                         Text(
                           AppStrings.pokemon.toUpperCase(),
-                          style: textTheme.headline6!.copyWith(
-                              letterSpacing: 5, color: AppColors.white),
+                          style: textTheme.headlineSmall!.copyWith(
+                            letterSpacing: 5,
+                            color: AppColors.white,
+                          ),
                         ),
                         Text(
                           AppStrings.pokedex,
-                          style: textTheme.headline4,
+                          style: textTheme.headlineLarge,
                         ),
                       ],
                     ),

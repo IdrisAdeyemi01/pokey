@@ -53,7 +53,7 @@ class PokemonCard extends ConsumerWidget {
                     children: [
                       Text(
                         "#${pokemon.id.toString().padLeft(3, '0')}",
-                        style: textTheme.subtitle2,
+                        style: textTheme.titleMedium,
                       ),
                       const Spacing.tinyHeight(),
                       FittedBox(
@@ -65,7 +65,7 @@ class PokemonCard extends ConsumerWidget {
                       const Spacing.smallHeight(),
                       Text(
                         pokemon.types.join(', '),
-                        style: textTheme.subtitle2,
+                        style: textTheme.titleMedium,
                         overflow: TextOverflow.ellipsis,
                       ),
                     ]),
